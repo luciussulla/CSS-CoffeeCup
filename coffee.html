@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.coffee {
+				width: 600px; 
+				height: 600px; 
+				position: relative; 
+				top: 50px; 
+				left: 50%; 
+				transform: translateX(-50%);
+/*				border: 1px solid black; */
+			}
+				
+			.handle {
+				position: absolute; 
+				top: 231px; 
+				transform: translateY(-50%);
+				left: 450px; 
+				width: 127px; 
+				height: 50px; 
+				border-radius: 50px; 
+				box-shadow: 5px 0px 1px 0 rgba(200,200,200,0.8);
+				background-color: #fff; 
+				background: white; 
+				background-image: linear-gradient(180deg,
+													rgb(200,200,200) 5%,
+													rgb(255,255,255) 50%, 
+													rgb(200,200,200) 95%
+				);
+/*				z-index: 5; */
+			}
+			
+			.coffee-cup {
+				position: relative; 
+				width: 462px; 
+				height: 462px; 
+				border-radius: 50%; 
+				z-index: 3; 
+				box-shadow: 10px 35px 30px 7px rgba(50,50,50,0.1);
+				background-image: radial-gradient(
+										50% 50%, 
+										rgb(14,7,0) 				65%, 
+										rgb(185,144,18) 		75%,
+										rgb(129,129,129)   	75%,
+										rgb(255,255,255) 		95%,
+										rgb(161,161,161)   100%
+				);
+			}
+			
+			.brew {
+				position: absolute; 
+				width: 310px; 
+				height: 316px; 
+				z-index: 4; 
+				box-shadow: 5px 5px 0px 0px rgba(252,232,185,0.5);
+				border-radius: 50%; 
+				top: 48%; 
+				left: 71px; 
+				transform: translateY(-70%);
+/*				border: 1px solid red; */
+				background-image: linear-gradient(140deg, 
+													rgb(0,0,0) 	0%, 
+													rgb(52,26,0) 100%
+				);
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="coffee">
+			<div class="handle"></div>
+			<div class="coffee-cup"></div>
+			<div class="brew"></div>		
+		</div> 
+		
+	</body>
+</html>	
